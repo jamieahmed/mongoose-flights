@@ -1,0 +1,30 @@
+<%- include('../partials/html-head') %>
+    <link rel="stylesheet" href="/stylesheets/movies/new.css" />
+    <%- include('../partials/nav') %>
+        <main>
+            <h1>
+                <%= title %>
+            </h1>
+            <form id="new-form" action="/flights" method="POST">
+                <label for="airline-select">Airline:</label>
+                <select name="airline" id="airline-select">
+                    <option value="American">American</option>
+                    <option value="Southwest">Southwest</option>
+                    <option value="United">United</option>
+                </select> <br>
+                <label for="airport-select">Airport:</label>
+                <select name="airport" id="airport-select">
+                    <option value="DEN">DEN</option>
+                    <option value="AUS">AUS</option>
+                    <option value="DFW">DFW</option>
+                    <option value="LAX">LAX</option>
+                </select><br>
+                <label for="flightNO-input">FlightNo:</label>
+                <input type="text" name="flightNo" id="flightNO-input"><br>
+                <label for="departs-input">Departs</label>
+                <input type="date" name="departs" id="departs-input"><br>
+                <button type="submit">Add Ticket</button>
+            </form>
+        </main>
+
+        <%- include("../partials/footer") %>
