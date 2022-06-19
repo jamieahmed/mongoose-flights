@@ -2,9 +2,13 @@
 
 <body>
     <nav>
-        <i class="">logo</i>
-        <a href="/flights/new" <%- title==='Add Flight' ? 'class="active"' : '' %>
+        <i class="logo">Eritrean Airline</i>
+        <a class="add-flight" href="/flights/new" <%- title==='Add Flight' ? 'class="active"' : '' %>
             >
             ADD FLIGHT
+        </a>
+        <a class="all-flights" href="/flights" <%- title==='All Flights' ? 'class="active"' : '' %>
+            >
+            ALL FLIGHTS
         </a>
     </nav>

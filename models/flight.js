@@ -27,14 +27,15 @@ const flightSchema = new Schema({
             let year = date.getFullYear();
             let month = date.getMonth();
             let day = date.getDate();
-            return new Date(year + 1, month, day)
+            let time = time.getHour();
+            return new Date(year + 1, month, day,time)
         }
     },
 })
 const Flight = mongoose.model('Flight', flightSchema)
 
 export {
-  Flight
+    Flight
 }
 
 

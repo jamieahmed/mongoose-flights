@@ -1,0 +1,35 @@
+<%- include('../partials/html-head') %>
+    <link rel="stylesheet" href="/stylesheets/flights/show.css" />
+    <%- include('../partials/nav') %>
+
+        <main>
+            <h1>
+                <%= title %>
+            </h1>
+            <section>
+                <div><strong>Airline:</strong>
+                    <%= flight.airline %>
+                </div>
+                <div><strong>Airport:</strong>
+                    <%= flight.airport %>
+                </div>
+                <div><strong>Flight Number:</strong>
+                    <%= flight.flightNo %>
+                </div>
+                <div><strong>Departs Date & Time:</strong>
+                    <%= flight.departs %>
+                </div>
+                <div>
+                    <%= flight.title %>
+                        <a href="/flights/<%= flight._id %>/edit">
+                            <button>Edit Flight</button>
+                        </a>
+                </div>
+                <div>
+                    <a class="go-back" href="/flights">Go back ➣</a>
+                </div>
+
+            </section>
+        </main>
+
+        <%- include('../partials/footer') %>

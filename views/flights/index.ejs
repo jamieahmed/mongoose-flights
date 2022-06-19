@@ -1,9 +1,47 @@
 <%- include('../partials/html-head') %>
-<link rel="stylesheet" href="/stylesheets/movies/index.css" />
-<%- include('../partials/nav') %>
+  <link rel="stylesheet" href="/stylesheets/flights/index.css" />
+  <%- include('../partials/nav') %>
 
-<main>
-  <h1>Movie List</h1>
-</main>
+    <main>
+      <h1>Flight List</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Airline</th>
+            <th>Airport</th>
+            <th>FlightNo</th>
+            <th>Departs</th>
+            <th>DELETE</th>
+            <th>DETAILS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% flights.forEach(flight=> {%>
+            <tr>
+              <td>1</td>
+              <td>
+                <%= flight.airline %>
+              </td>
+              <td>
+                <%= flight.airport %>
+              </td>
+              <td>
+                <%= flight.flightNo %>
+              </td>
+              <td>
+                <%= flight.departs %>
+              </td>
+              <td>
+                <form action="/flights/<%= flight._id %>?_method=DELETE" method="POST">
+                  <button class="delete-flight">DELETE</button>
+                </form>
+              <td><a class="details-flight" href="/flights/<%= flight._id %>">DETAILS</a></td>
+              </td>
+            </tr>
+            <% }) %>
+        </tbody>
+      </table>
+    </main>
 
-<%- include('../partials/footer') %>
+    <%- include('../partials/footer') %>

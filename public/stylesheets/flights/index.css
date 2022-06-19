@@ -1,0 +1,48 @@
+table {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+thead {
+    background-color: red;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+th {
+    padding: 10px;
+}
+
+tbody {
+    background-color: rgb(200, 227, 218);
+
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.delete-flight {
+    background-color: rgb(210, 46, 46);
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.details-flight {
+    background-color: green;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid black;
+    color: black;
+}
