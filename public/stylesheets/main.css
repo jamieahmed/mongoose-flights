@@ -62,12 +62,17 @@ body>nav {
 nav>.logo {
     object-fit: contain;
     margin-right: auto;
+
+
+}
+
+nav>.logo>a {
+    text-decoration: none;
     color: white;
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
     text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
-
 }
 
 nav>.add-flight,
