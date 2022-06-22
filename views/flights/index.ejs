@@ -19,7 +19,7 @@
         <tbody>
           <% flights.forEach(flight=> {%>
             <tr>
-              <td>1</td>
+              <td><%= flights.indexOf(flight) +1 %></td>
               <td>
                 <%= flight.airline %>
               </td>
