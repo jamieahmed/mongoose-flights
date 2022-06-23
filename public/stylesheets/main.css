@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    background-image: url('../assets/eritra-flag.jpg');
+    background-image: url('../assets/plane.jpg');
     background-size: cover;
     /* Use a system font, if none are available use an available sans-sarif font */
     margin: 0;
