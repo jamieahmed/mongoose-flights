@@ -76,6 +76,7 @@ nav>.logo>a {
 }
 
 nav>.add-flight,
+.add-meal,
 .all-flights {
     margin: 20px;
     text-decoration: none;
@@ -87,13 +88,9 @@ nav>.add-flight,
 }
 
 nav>.add-flight:hover,
+.add-meal:hover,
 .all-flights:hover {
     text-decoration: overline solid red;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.main-footer {
-    height: 50px;
-    width: 100%;
-    background-color: black;
-}

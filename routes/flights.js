@@ -25,7 +25,7 @@ router.delete("/:id", flightsCtrl.delete)
 // localhost:3000/flight/:id
 router.put("/:id", flightsCtrl.update)
 
-
+router.post('/:id/meals', flightsCtrl.addToMeals);
 
 export {
 	router,

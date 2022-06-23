@@ -26,13 +26,15 @@
         <button>Edit Flight</button>
       </a>
     </div>
+  </section>
+  <section>
     <form
       id="ticket-form"
       action="/flights/<%= flight._id%>/tickets"
       method="POST"
     >
+      <strong>Add a Ticket:</strong>
       <div>
-        <strong>Ticket:</strong>
         <label for="seat">Seat</label>
         <input name="seat" required pattern="[A-F][1-9]\d?" />
         <label for="price-input">price</label>
@@ -40,6 +42,7 @@
         <button type="submit">Add Ticket</button>
       </div>
     </form>
+    <strong>Ticket Details:</strong>
     <% if (flight.tickets.length) { %>
     <table>
       <thead>
@@ -61,6 +64,28 @@
     </table>
     <% } else { %>
     <h3>No tickets Yet</h3>
+    <% } %>
+  </section>
+
+  <section>
+    <strong>Add a Meal:</strong>
+    <form id="add-per-to-meal" action="???" method="POST">
+      <select name="mealId">
+        <% meals.forEach(meal=> { %>
+        <option value="<%= meal._id %>"><%= meal.name %></option>
+        <% }) %>
+      </select>
+      <button type="submit">Add Meal</button>
+    </form>
+    <strong>Meal Details:</strong>
+    <% if (flight.meals.length) { %>
+    <ul>
+      <% flight.meals.forEach(meal=> { %>
+      <li><%= meal.name %></li>
+      <% }) %>
+    </ul>
+    <% } else { %>
+    <h3>No Meals Yet</h3>
     <% } %>
   </section>
 </main>

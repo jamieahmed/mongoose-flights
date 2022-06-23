@@ -1,5 +1,5 @@
 section {
-    background-color: rgb(153, 82, 51);
+    background-color: rgb(51, 153, 150);
     width: 70%;
     margin: auto;
     padding: 25px;
@@ -37,4 +37,4 @@ button {
     font-weight: bold;
     text-decoration: none;
     margin: 5px;
-}
+} 
